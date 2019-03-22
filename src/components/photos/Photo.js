@@ -1,11 +1,10 @@
 import React from "react";
 
-function Photo(props) {
-
-  const {photo} = props
+function Photo(props) {    
+  const photo = props.location.state
   return (
     <div>
-      <image src={photo.url} />
+      <img src={photo.url} alt="green" />
     </div>
   );
 }
